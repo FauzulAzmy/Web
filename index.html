@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPORT FC</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1></h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn-register" id="open-popup">Daftar Sekarang</a>
+    </header>
+
+    <!-- Lomba Section -->
+    <section class="lomba-container">
+        <div class="lomba">
+            <img src="renang2.jpg" alt="Lomba Kreativitas Pemuda 1">
+            <h2>BERENANG</h2>
+            <p>Ikuti perlombaan renang ini untuk menunjukkan kecepatan dan keterampilanmu di air. Ayo gabung dan buktikan dirimu sebagai perenang terbaik!</p>
+            <div class="peraturan">
+                <h3>Peraturan:</h3>
+                <ul>
+                    <li>Peserta harus mengenakan pakaian renang yang sesuai.</li>
+                    <li>Setiap peserta akan diberi waktu 2 menit untuk bersiap.</li>
+                    <li>Pengukuran waktu dilakukan oleh juri yang ditunjuk.</li>
+                    <li>Pemenang akan diumumkan setelah semua peserta selesai.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="lomba">
+            <img src="bola3.jpg" alt="Lomba Kreativitas Pemuda 2">
+            <h2>BOLA KAKI</h2>
+            <p>Perlombaan bola ini adalah kesempatan untuk menunjukkan kemampuan timmu dalam bermain bola. Daftarkan tim terbaikmu dan raih juara!</p>
+            <div class="peraturan">
+                <h3>Peraturan:</h3>
+                <ul>
+                    <li>Masing-masing tim terdiri dari 5 pemain.</li>
+                    <li>Setiap pertandingan berlangsung selama 15 menit.</li>
+                    <li>Wasit akan bertanggung jawab atas jalannya pertandingan.</li>
+                    <li>Tim dengan skor tertinggi akan menjadi pemenang.</li>
+                </ul>
+            </div>
+        </div>
+        <div class="lomba">
+            <img src="raket2.jpg" alt="Lomba Kreativitas Pemuda 3">
+            <h2>BADMINTON</h2>
+            <p>Perlombaan raket ini menguji kecepatan dan strategi dalam permainan. Ayo ikuti dan buktikan siapa yang paling handal!</p>
+            <div class="peraturan">
+                <h3>Peraturan:</h3>
+                <ul>
+                    <li>Setiap pertandingan terdiri dari 3 set.</li>
+                    <li>Pemain yang memenangkan 2 set pertama akan menjadi pemenang.</li>
+                    <li>Gunakan raket dan bola yang sesuai dengan standar lomba.</li>
+                    <li>Peraturan permainan mengikuti ketentuan resmi.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Form -->
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span class="close" id="close-popup">&times;</span>
+            <h2>Pendaftaran Lomba</h2>
+            <form id="registration-form">
+                <label for="full-name">Nama Lengkap:</label>
+                <input type="text" id="full-name" required>
+                
+                <label for="phone-number">No HP:</label>
+                <input type="tel" id="phone-number" required>
+                
+                <label for="competition-type">Jenis Lomba:</label>
+                <select id="competition-type" required>
+                    <option value="">Pilih Jenis Lomba</option>
+                    <option value="renang">Berenang</option>
+                    <option value="bola_kaki">Bola Kaki</option>
+                    <option value="badminton">Badminton</option>
+                </select>
+                
+                <button type="submit">Daftar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
